@@ -23,7 +23,7 @@
 <img src="./images/react_env.png">
 
 #### 1. Node.js 설치
-React 프로젝트를 실행하려면 Node.js가 필요합니다. Node.js 공식 사이트에서 LTS 버전을 다운로드하여 설치하세요.
+React 프로젝트를 실행하려면 Node.js가 필요합니다. [Node.js 공식 사이트](https://nodejs.org/)에서 LTS 버전을 다운로드하여 설치하세요.
 
 #### 2. 패키지 관리자 설치
 Node.js를 설치하면 기본적으로 npm이 포함되어 있습니다. yarn을 사용하려면 다음 명령어를 실행하세요:
@@ -47,6 +47,7 @@ Visual Studio Code를 설치하고 `ES7+ React/Redux/React-Native snippets` 등�
 React는 컴포넌트 기반으로 동작하므로 `src` 폴더에서 `App.js`를 수정하며 개발을 진행할 수 있습니다.
 
 
+cf. [개발환경 설치 및 프로젝트 셋팅 가이드](https://www.devitworld.com/coding/react/react-tutorial-env-setting-setup-guide/)
 
 
 
