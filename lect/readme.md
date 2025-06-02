@@ -2,23 +2,26 @@
 
 # 리액트 강좌
 
-### INDEX
+## INDEX
 --- 
-> ##### S01. 소개
-> ##### S02. 설치(create-react-app)
-> ##### S03. 컴포넌트, JSX
-> ##### S04. 첫 컴포넌트 만들기
-> ##### S05. CSS 작성법(module css)
-> ##### S06. 이벤트 처리(Handling Events)
-> ##### S07. state, useState
-> ##### S08. props
-> ##### S09. 더미 데이터 구현, map() 반복문
-> ##### S10. 라우터 구현 react-router-dom
-> ##### S11. json-server, REST API
-> ##### S12. useEffect, fetch()로 API 호출
-> ##### S13. Custom Hooks
-> ##### S14. PUT(수정), DELETE(삭제)
-> ##### S15. POST(생성), useHistory()
-> ##### S16. 마치며
-> ##### Appendix. 타입스크립트를 적용해보자!
+> #### [S01. 소개                                        ][lect-s01]
+> #### [S02. 설치(create-react-app)		      ][lect-s02]
+> #### [S03. 컴포넌트, JSX			      ][lect-s03]
+> #### [S04. 첫 컴포넌트 만들기			      ][lect-s04]
+> #### [S05. CSS 작성법(module css)		      ][lect-s05]
+> #### [S06. 이벤트 처리(Handling Events)	      ][lect-s06]
+> #### [S07. state, useState			      ][lect-s07]
+> #### [S08. props					      ][lect-s08]
+> #### [S09. 더미 데이터 구현, map() 반복문	      ][lect-s09]
+> #### [S10. 라우터 구현 react-router-dom	      ][lect-s10]
+> #### [S11. json-server, REST API		      ][lect-s11]
+> #### [S12. useEffect, fetch()로 API 호출	      ][lect-s12]
+> #### [S13. Custom Hooks			      ][lect-s13]
+> #### [S14. PUT(수정), DELETE(삭제)		      ][lect-s14]
+> #### [S15. POST(생성), useHistory()		      ][lect-s15]
+> #### [S16. 마치며				      ][lect-s16]
+> #### [Appendix. 타입스크립트를 적용해보자!     ][lect-appendix] 
+
+[lect-s01]: s01_intro.md
+[lect-s02]: s02_setup.md
 
