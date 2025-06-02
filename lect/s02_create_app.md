@@ -204,5 +204,3 @@ webpack compiled successfully
 
 > 커맨드창에서 `Ctrl + C` 키만 누르면 서버가 중지
 
-[[기본 명령어]](#기본-명령어)
-<br/>
