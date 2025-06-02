@@ -85,4 +85,55 @@ Mode                 LastWriteTime         Length Name
 d-----      2025-06-03   오전 7:32                voca
 
 ```
-- 
+
+### Commands 
+- npm start
+- npm run build
+- npm test
+- npm run eject
+
+```powershell
+PS C:\GitHub\D2505_React\lect\react> cd voca
+PS C:\GitHub\D2505_React\lect\react\voca> ls
+
+
+    디렉터리: C:\GitHub\D2505_React\lect\react\voca
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----      2025-06-03   오전 7:32                node_modules
+d-----      2025-06-03   오전 7:32                public
+d-----      2025-06-03   오전 7:32                src
+-a----      2025-06-03   오전 7:32            310 .gitignore
+-a----      2025-06-03   오전 7:32         663174 package-lock.json
+-a----      2025-06-03   오전 7:32            845 package.json
+-a----      2025-06-03   오전 7:32           3359 README.md
+
+
+PS C:\GitHub\D2505_React\lect\react\voca> npm start
+
+> voca@0.1.0 start
+> react-scripts start
+
+(node:5444) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:5444) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+Compiled successfully!
+
+You can now view voca in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.54.82:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+
+```
+
+- localhost:3000
+![첫화면](./images/s02_react_default.png)
+
