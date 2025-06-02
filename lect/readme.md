@@ -23,5 +23,5 @@
 > #### [Appendix. 타입스크립트를 적용해보자!     ][lect-appendix] 
 
 [lect-s01]: s01_intro.md
-[lect-s02]: s02_setup.md
+[lect-s02]: s02_create_app.md
 
