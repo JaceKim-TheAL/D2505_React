@@ -2,13 +2,26 @@
 
 ## S02. 설치(create-react-app)	
 
+### 기본 명령어
+| Command   | Description | 
+|:----------|:------------|
+| npx create-react-app `프로젝트명` | 새 React 프로젝트를 생성 |
+| npm install   | `package.json`에 정의된 모든 패키지를 설치 |
+| npm start     | 개발 모드에서 프로젝트를 실행, 기본적으로 `localhost:3000`에서 확인 |
+| npm run build |  배포 가능한 상태로 정리된 파일을 `build` 폴더에 생성 |
+| npm test      | 프로젝트 내 정의된 테스트를 실행 |
+| npm uninstall `패키지명` | 설치된 패키지를 제거 |
+| npm run `스크립트명`     | `package.json`에 정의된 스크립트를 실행할 때 사용 |
+
+
 ### 프로젝트 앱 개발
 
-- 설치 : npx create-react-app `프로젝트명`
+- 프로젝트 생성 : npx create-react-app `프로젝트명`
 ```powershell
 npx create-react-app vocs
 ```
 
+- 개벌 서버 실행 : npm start
 ```powershell
 PS C:\GitHub\D2505_React\lect> cd .\react\
 PS C:\GitHub\D2505_React\lect\react> ls
@@ -86,11 +99,8 @@ d-----      2025-06-03   오전 7:32                voca
 
 ```
 
-### Commands 
-- npm start
-- npm run build
-- npm test
-- npm run eject
+
+- 개발 서버 실행행
 
 ```powershell
 PS C:\GitHub\D2505_React\lect\react> cd voca
