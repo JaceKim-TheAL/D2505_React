@@ -20,8 +20,15 @@
 
 ---
 ### 리액트개발에 필요한 준비물
+- Node.js
 ![준비물](./images/s01_intro_21.png)
+
+- VS Code
 ![준비물](./images/s01_intro_22.png)
+
+- JavaScript 이해해
 ![준비물](./images/s01_intro_23.png)
+
+- Source Code
 ![준비물](./images/s01_intro_24.png)
 
