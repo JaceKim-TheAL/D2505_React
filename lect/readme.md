@@ -5,7 +5,7 @@
 ## INDEX
 --- 
 > #### [S01. 소개                                        ][lect-s01]
-> #### [S02. 설치(create-react-app)		      ][lect-s02]
+> #### [S02. 개발앱 프로젝트 생성성    		      ][lect-s02]
 > #### [S03. 컴포넌트, JSX			      ][lect-s03]
 > #### [S04. 첫 컴포넌트 만들기			      ][lect-s04]
 > #### [S05. CSS 작성법(module css)		      ][lect-s05]

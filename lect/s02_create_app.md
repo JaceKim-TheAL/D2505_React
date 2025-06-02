@@ -1,6 +1,6 @@
 [![My Skills](https://skillicons.dev/icons?heiht="10"&i=nodejs,vscode,js,react&theme=light)](readme.md)
 
-## S02. 설치(create-react-app)	
+## S02. 개발앱 프로젝트 생성	
 
 ### 기본 명령어
 | Command   | Description | 
@@ -14,12 +14,13 @@
 | npm run `스크립트명`     | `package.json`에 정의된 스크립트를 실행할 때 사용 |
 <br/>
 
+---
 ## 프로젝트 앱 개발
 - [프로젝트 생성 ](#프로젝트-생성)
 - [개발 서버 실행](#개발-서버-실행)
 - [개발 서버 중지](#개발-서버-중지)
 
----
+
 ### 프로젝트 생성 
 - 프로젝트 생성 : npx create-react-app `프로젝트명`
 ```powershell
