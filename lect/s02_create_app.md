@@ -1,7 +1,11 @@
 [![My Skills](https://skillicons.dev/icons?heiht="10"&i=nodejs,vscode,js,react&theme=light)](readme.md)
 
 ## S02. 설치(create-react-app)	
+- [프로젝트 생성 ](#프로젝트-생성)
+- [개발 서버 실행](#개발-서버-실행)
+- [개발 서버 중지](#개발-서버-중지)
 
+---
 ### 기본 명령어
 | Command   | Description | 
 |:----------|:------------|
@@ -14,8 +18,10 @@
 | npm run `스크립트명`     | `package.json`에 정의된 스크립트를 실행할 때 사용 |
 <br/>
 
-### 프로젝트 앱 개발
+## 프로젝트 앱 개발
+---
 
+### 프로젝트 생성 
 - 프로젝트 생성 : npx create-react-app `프로젝트명`
 ```powershell
 npx create-react-app vocs
@@ -98,9 +104,9 @@ Mode                 LastWriteTime         Length Name
 d-----      2025-06-03   오전 7:32                voca
 
 ```
+<br/>
 
-
-- 개발 서버 실행행
+### 개발 서버 실행
 
 ```powershell
 PS C:\GitHub\D2505_React\lect\react> cd voca
@@ -146,4 +152,55 @@ webpack compiled successfully
 
 - localhost:3000
 ![첫화면](./images/s02_react_default.png)
+
+- `package.json` 만 있으면 `node_modules` 폴더는 굳이 `GitHub`에 올리지 않아도 됨
+```json
+{
+  "name": "voca",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
+
+```
+
+<br/>
+
+### 개발 서버 중지
+
+> 커맨드창에서 `Ctrl + C` 키만 누르면 서버가 중지
+
 
