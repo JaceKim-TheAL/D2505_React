@@ -27,3 +27,59 @@ function Greeting() {
 
 <br/>
 
+### 페이지
+
+- src/index.js
+```js
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+```
+
+- src/App.js
+```js
+import "./App.css";
+
+function App() {
+
+  const name = "React";
+  const naver = {
+    name: "네이버",
+    url: "https://www.naver.com"
+  }
+
+  return (
+    <div className="App">
+      <h1
+        style={{
+          color: "#EE0000",
+          backgroundColor: "lightgreen",
+          padding: "20px",
+          borderRadius: "10px",
+          fontSize: "24px",
+          textAlign: "center",
+          marginTop: "20px"
+        }}>
+        Hello, {name} !!!  
+      </h1>
+      <a href={naver.url}>
+        {naver.name}
+      </a>
+    </div>
+  );
+}
+
+export default App;
+```
+
+- localhost:3000
+![화면](./images/s03_react_default.png)

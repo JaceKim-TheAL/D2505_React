@@ -4,17 +4,16 @@ function App() {
 
   const name = "React";
   const naver = {
-    name: "네이버버",
-    url: "https://www.naver.com",
-    logo: "./images/naver_logo.jpg"
+    name: "네이버",
+    url: "https://www.naver.com"
   }
 
   return (
     <div className="App">
       <h1
         style={{
-          color: "blue",
-          backgroundColor: "lightgray",
+          color: "#EE0000",
+          backgroundColor: "lightgreen",
           padding: "20px",
           borderRadius: "10px",
           fontSize: "24px",
@@ -24,16 +23,6 @@ function App() {
         Hello, {name} !!!  
       </h1>
       <a href={naver.url}>
-        <img
-          src={naver.logo}
-          alt={naver.name}
-          style={{
-            width: "100px",
-            height: "100px",
-            display: "block",
-            margin: "20px auto"
-          }}
-        />
         {naver.name}
       </a>
     </div>
