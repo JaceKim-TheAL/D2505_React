@@ -105,12 +105,12 @@ import { useState } from "react";
 
 export default function Hello() {
   // let name = "로미오";
-  let [name, setName] = useState("로미오");
+  const [name, setName] = useState("로미오");
 
   function changeName() {
-    name = name === "로미오" ? "쥴리엣" : "로미오";
+    const newName = name === "로미오" ? "쥴리엣" : "로미오";
     // document.getElementById("name").innerText = name; 
-    setName(name); // useState 훅을 사용하여 상태를 변경합니다.
+    setName(newName); // useState 훅을 사용하여 상태를 변경합니다.
   }
 
   return (
