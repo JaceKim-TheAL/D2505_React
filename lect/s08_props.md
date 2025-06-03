@@ -80,6 +80,7 @@ Hello.js:4  Uncaught TypeError: Cannot assign to read only property 'age' of obj
 
 - localhost:3000
 > setAge(age + 1); 를 주석처리
+
 ![화면](./images/s08_props_01.png)
 
 
