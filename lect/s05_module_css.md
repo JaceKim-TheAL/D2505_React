@@ -5,6 +5,7 @@
 - [CSS파일 적용1](#css파일-적용1) : CSS 파일에 전체 or 앱페이지에 적용할 style 작성
 - [CSS파일 적용2](#css파일-적용2) : 적용할 CSS 파일을 직접 import 하여 적용 
 - [CSS파일 적용3](#css파일-적용3) : 적용할 CSS 파일을 컴포넌트와 동일하게 네이밍
+- [CSS파일 적용4](#css파일-적용4) : App.css에 추가된 클래스를 App.module.css로 옮김
 ---
 
 ### 인라인 스타일
@@ -306,4 +307,31 @@ export default function Hello() {
 
 - localhost:3000
 ![화면](./images/s05_style_13.png)
+
+
+---
+[[TOP]](#s05-css-작성법module-css)
+<br/>
+
+### CSS파일 적용4 
+> App.css에 추가된 클래스를 App.module.css로 옮김
+
+- src/App.module.css
+```css
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: orangered;
+}
+
+```
+
+- src/App.jss
+```js
+
+```
+
+
+- localhost:3000
+![화면](./images/s05_style_14.png)
 
