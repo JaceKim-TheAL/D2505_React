@@ -25,5 +25,7 @@
 [lect-s01]: s01_intro.md
 [lect-s02]: s02_create_app.md
 [lect-s03]: s03_component_jsx.md
+[lect-s04]: s04_add_component.md
+[lect-s05]: s05_module_css.md
 
 
