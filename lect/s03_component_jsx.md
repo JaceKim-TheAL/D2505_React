@@ -147,7 +147,7 @@ export default function World() {
 ```
 
 - localhost:3000
-![화면](./images/s03_react_component.png)
+![화면](./images/s04_add_component.png)
 
 ---
 [[TOP]](#s03-컴포넌트-jsxjavascript-xml)
