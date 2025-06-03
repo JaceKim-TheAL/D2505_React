@@ -4,6 +4,7 @@
 - [인라인 스타일](#인라인-스타일) : CSS 파일없이 태그안에 직접 style 작성
 - [CSS파일 적용1](#css파일-적용1) : CSS 파일에 전체 or 앱페이지에 적용할 style 작성
 - [CSS파일 적용2](#css파일-적용2) : 적용할 CSS 파일을 직접 import 하여 적용 
+- [CSS파일 적용3](#css파일-적용3) : 적용할 CSS 파일을 컴포넌트와 동일하게 네이밍
 ---
 
 ### 인라인 스타일
@@ -164,7 +165,8 @@ export default function Hello() {
 [[TOP]](#s05-css-작성법module-css)
 <br/>
 
-### CSS파일 적용1 : App.css 파일에 클래스 추가
+### CSS파일 적용1 
+> App.css 파일에 클래스 추가
 
 - src/App.css 에 class(.클래스명) 추가
 ```css
@@ -206,19 +208,15 @@ export default function Hello() {
 
 ```
 
-
 - localhost:3000
 ![화면](./images/s05_style_11.png)
-
-
-
-
 
 ---
 [[TOP]](#s05-css-작성법module-css)
 <br/>
 
-### CSS파일 적용2 : 특정 페이지에만 적용할 Hello.css 파일을 생성하여 import
+### CSS파일 적용2 
+> 특정 페이지에만 적용할 Hello.css 파일을 생성하여 import
 
 - src/component/Hello.css
 ```css
@@ -262,5 +260,50 @@ export default function Hello() {
 
 
 ---
+[[TOP]](#s05-css-작성법module-css)
+<br/>
 
+### CSS파일 적용3 
+> 특정 페이지에만 적용할 파일에 대한 네이밍을 컴포넌트와 동일하게 생성성
+
+- src/component/Hello.module.css
+```css
+.box {
+  width: 200px;
+  height: 50px;
+  background-color: green;
+}
+
+```
+
+- src/component/Hello.js
+```js
+import World from "./World";
+// import "./Hello.css";
+import styles from "./Hello.module.css";
+
+export default function Hello() {
+  return (
+    <div>
+      <h1 style={{ 
+        color: "#f00",
+        fontSize: "24px",
+        borderRight: "12px solid #000",
+        marginBottom: "50px",
+        opacity: 0.5, 
+      }}
+      >
+        Hello
+      </h1>
+      <div className={styles.box}>Hello</div>
+      <World />
+
+    </div>
+  );
+}
+
+```
+
+- localhost:3000
+![화면](./images/s05_style_13.png)
 
