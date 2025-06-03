@@ -2,7 +2,7 @@
 
 ## S05. CSS 작성법(module css)
 - [인라인 스타일](#인라인-스타일) : CSS 파일없이 태그안에 직접 style 작성
-- [CSS파일 적용](#css파일-적용)
+- [CSS파일 적용](#css파일-적용) : CSS 파일에 전체 or 앱페이지에 적용할 style 작성
 
 ---
 
@@ -161,6 +161,41 @@ export default function Hello() {
 ```
 
 
+---
+[[TOP]](#s05-css-작성법module-css)
+<br/>
+
+### CSS파일에 클래스 추가
+
+- src/App.css 에 class(.클래스명) 추가
+```css
+...............
+...............
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+```
+
+- src/component/Hello.css
+```css
+.box {
+  width: 200px;
+  height: 50px;
+  background-color: blue;
+}
+
+```
+
+- src/component/Hello.js
+```js
+
+```
+
+
 - localhost:3000
-![화면](./images/s04_add_component.png)
+![화면](./images/s05_style_02.png)
 

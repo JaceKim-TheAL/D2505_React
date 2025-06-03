@@ -1,4 +1,7 @@
 import World from "./World";
+import "./Hello.css";
+
+
 
 export default function Hello() {
   return (
@@ -10,8 +13,12 @@ export default function Hello() {
         marginBottom: "50px",
         opacity: 0.5, 
       }}
-      >Hello</h1>
+      >
+        Hello
+      </h1>
+      <div className="box">Hello</div>
       <World />
+
     </div>
   );
 }
