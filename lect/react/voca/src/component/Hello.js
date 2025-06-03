@@ -1,8 +1,6 @@
 import World from "./World";
 import "./Hello.css";
 
-
-
 export default function Hello() {
   return (
     <div>
