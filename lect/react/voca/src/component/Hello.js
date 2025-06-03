@@ -4,6 +4,14 @@ export default function Hello() {
     console.log("My name is Jace");
   }
 
+  function showAge() {
+    console.log("My age is 25");
+  } 
+
+  function showText(e) {
+    console.log(e.target.value);
+  }
+
   return (
     <div>
       <h1>Hello</h1>
@@ -15,6 +23,8 @@ export default function Hello() {
       >
         Show age
       </button>
+      <br/>
+      <input type="text" onChange={showText} />
     </div>
   );
 }
