@@ -1,9 +1,14 @@
 [![My Skills](https://skillicons.dev/icons?heiht="10"&i=nodejs,vscode,js,react&theme=light)](readme.md)
 
-## S03. 컴포넌트, JSX
-
-### JSX(JavaScript XML)
+## S03. 컴포넌트, JSX(JavaScript XML)
 > React에서 사용되는 문법으로, JavaScript 코드 안에서 HTML을 직관적으로 작성할 수 있도록 도와준다.
+
+- [JSX 특징](#jsx-특징)
+- [기본 화면](#기본-페이지---appjs)
+- [콤포넌트 추가](#컴포넌트-추가)
+- [스타일 적용](#스타일-적용)
+
+---
 
 ### JSX 특징
 
@@ -24,7 +29,8 @@ function Greeting() {
 }
 ```
 
-
+---
+[[TOP]](#s03-컴포넌트-jsxjavascript-xml)
 <br/>
 
 ### 기본 페이지 - App.js
@@ -86,6 +92,8 @@ export default App;
 
 
 ---
+[[TOP]](#s03-컴포넌트-jsxjavascript-xml)
+<br/>
 
 ### 컴포넌트 추가
 - src/App.js
@@ -137,6 +145,43 @@ export default function World() {
 }
 
 ```
+
+- localhost:3000
+![화면](./images/s03_react_component.png)
+
+---
+[[TOP]](#s03-컴포넌트-jsxjavascript-xml)
+<br/>
+
+- 컴포넌트 구조
+![구조](./images/s04_component_01.png)
+
+![구조](./images/s04_component_02.png)
+
+
+### 스타일 적용
+
+- component/Hello.js
+```js
+import World from "./World";
+
+export default function Hello() {
+  return (
+    <div>
+      <h1 style={{ 
+        color: "#f00",
+        fontSize: "24px",
+        borderRight: "12px solid #000",
+        marginBottom: "50px",
+        opacity: 0.5, 
+      }}
+      >Hello</h1>
+      <World />
+    </div>
+  );
+}
+```
+
 
 - localhost:3000
 ![화면](./images/s03_react_component.png)
