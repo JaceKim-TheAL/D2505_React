@@ -8,8 +8,8 @@ export default function Hello() {
     console.log("My age is 25");
   } 
 
-  function showText(e) {
-    console.log(e.target.value);
+  function showText(txt) {
+    console.log(txt);
   }
 
   return (
@@ -24,7 +24,13 @@ export default function Hello() {
         Show age
       </button>
       <br/>
-      <input type="text" onChange={showText} />
+      <input 
+        type="text" 
+        onChange={e => {
+          const txt = e.target.value;
+          console.log(txt); 
+        }}
+      />
     </div>
   );
 }
