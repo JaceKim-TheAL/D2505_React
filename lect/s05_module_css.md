@@ -1,6 +1,10 @@
 [![My Skills](https://skillicons.dev/icons?heiht="10"&i=nodejs,vscode,js,react&theme=light)](readme.md)
 
-## S04. 컴포넌트 추가
+## S05. CSS 작성법(module css)
+- [인라인 스타일](#인라인-스타일)
+
+
+### 인라인 스타일
 
 - src/App.js
 ```js
@@ -28,7 +32,14 @@ import World from "./World";
 export default function Hello() {
   return (
     <div>
-      <h1>Hello</h1>
+      <h1 style={{ 
+        color: "#f00",
+        fontSize: "24px",
+        borderRight: "12px solid #000",
+        marginBottom: "50px",
+        opacity: 0.5, 
+      }}
+      >Hello</h1>
       <World />
     </div>
   );
@@ -53,19 +64,11 @@ export default function World() {
 ```
 
 - localhost:3000
-![화면](./images/s04_add_component.png)
+![화면](./images/s05_style_01.png)
+
 
 ---
-[[TOP]](#s03-컴포넌트-jsxjavascript-xml)
-<br/>
-
-- 컴포넌트 구조
-![구조](./images/s04_component_01.png)
-
-![구조](./images/s04_component_02.png)
-
----
-[[TOP]](#s04-컴포넌트-추가)
+[[TOP]](#s05-css-작성법module-css)
 <br/>
 
 
