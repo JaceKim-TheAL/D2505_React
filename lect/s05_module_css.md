@@ -68,3 +68,31 @@ export default function World() {
 [[TOP]](#s04-컴포넌트-추가)
 <br/>
 
+
+### 스타일 적용
+
+- component/Hello.js
+```js
+import World from "./World";
+
+export default function Hello() {
+  return (
+    <div>
+      <h1 style={{ 
+        color: "#f00",
+        fontSize: "24px",
+        borderRight: "12px solid #000",
+        marginBottom: "50px",
+        opacity: 0.5, 
+      }}
+      >Hello</h1>
+      <World />
+    </div>
+  );
+}
+```
+
+
+- localhost:3000
+![화면](./images/s04_add_component.png)
+
