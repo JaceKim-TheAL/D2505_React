@@ -28,5 +28,7 @@
 [lect-s04]: s04_add_component.md
 [lect-s05]: s05_module_css.md
 [lect-s06]: s06_handling_events.md
+[lect-s07]: s07_state_useState.md
+
 
 
