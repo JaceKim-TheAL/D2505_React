@@ -136,9 +136,48 @@ export default function Hello({age}) {
 
 ### 속성값 전달3
 
+- src/component/UserName.js
+```js
+export default function UserName({name}) {
+    return <p>Hello, {name}</p>
+}
+// 위의 Hello 컴포넌트와 동일한 기능을 하는 UserName 컴포넌트입니다.
+// UserName 컴포넌트는 name이라는 prop을 받아서 "Hello, {name}"을 출력합니다.
+```
+
+- src/component/Hello.js
+```js
+import { useState } from "react";
+import UserName from "./UserName";
+
+export default function Hello({age}) {
+  const [name, setName] = useState("로미오");
+  const msg = age > 19 ? "성인입니다." : "청소년입니다.";
+  
+  return (
+    <div>
+      <h1>props (=properties) </h1>
+      <h2>속성값 : 
+        <b id="name">
+          {name}({age}) : {msg} 
+        </b>
+      </h2>
+      <UserName name={name} />
+      <button 
+        onClick={() => {
+          setName(name === "로미오" ? "쥴리엣" : "로미오");
+        }}
+      >
+        이름 바꾸기
+      </button>
+    </div>
+  );
+}
+
+```
 
 - localhost:3000
-![화면](./images/s08_props_01_err.png)
+![화면](./images/s08_props_03.png)
 
 ---
 [[TOP]](#s08-props)
