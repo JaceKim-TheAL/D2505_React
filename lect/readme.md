@@ -7,7 +7,7 @@
 > #### [S01. 소개                                        ][lect-s01]
 > #### [S02. 개발앱 프로젝트 생성    		      ][lect-s02]
 > #### [S03. 기본 컴포넌트, JSX			      ][lect-s03]
-> #### [S04. 컴포넌트 추가가			      ][lect-s04]
+> #### [S04. 컴포넌트 추가 			      ][lect-s04]
 > #### [S05. CSS 작성법(module css)		      ][lect-s05]
 > #### [S06. 이벤트 처리(Handling Events)	      ][lect-s06]
 > #### [S07. state, useState			      ][lect-s07]
