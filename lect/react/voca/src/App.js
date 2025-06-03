@@ -29,7 +29,7 @@ function App() {
           alt={naver.name}
           style={{
             width: "100px",
-            height: "auto",
+            height: "100px",
             display: "block",
             margin: "20px auto"
           }}
