@@ -1,9 +1,9 @@
 [![My Skills](https://skillicons.dev/icons?heiht="10"&i=nodejs,vscode,js,react&theme=light)](readme.md)
 
 ## S08. props	
-> React에서 Props(Properties)는 컴포넌트 간 데이터를 전달하는 방식
-> ▶ **읽기 전용(Read-Only)** : Props는 변경할 수 없는 값입니다. 컴포넌트 내부에서 직접 수정할 수 없습니다.
-> ▶ **부모 → 자식 데이터 전달** : 부모 컴포넌트가 값을 정의하고, 자식 컴포넌트는 이를 받아서 사용합니다.
+> React에서 Props(Properties)는 컴포넌트 간 데이터를 전달하는 방식 <br/>
+> ▶ **읽기 전용(Read-Only)** : Props는 변경할 수 없는 값입니다. 컴포넌트 내부에서 직접 수정할 수 없습니다. <br/>
+> ▶ **부모 → 자식 데이터 전달** : 부모 컴포넌트가 값을 정의하고, 자식 컴포넌트는 이를 받아서 사용합니다. <br/>
 
 - 속성값으로 컴포넌트 간 데이터 전달
 - [속성값 전달1](#속성값-전달1) : 컴포넌트의 속성값 읽어오기. *props.속성*
