@@ -15,7 +15,13 @@
 ---
 
 ## Tips
+- [논리연산자](#논리연산자) : React에서 논리연산자
+- [{ }중괄호](#중괄호) : React에서 { }(중괄호)
 
+
+---
+
+### 논리연산자
 
 **[Tip] React에서 논리연산자** 
 1. 같다 (Equality)
@@ -62,7 +68,10 @@ function Example({ value }) {
 ※ 참조 : [React 공식 문서](https://ko.react.dev/learn/conditional-rendering)
 
 ---
+[[TOP]](#기본-명령어)
+<br/>
 
+### 중괄호
 
 **[Tip] React에서 { }(중괄호)** 
 1. 변수 출력
@@ -108,5 +117,7 @@ return <p style={style}>파란색 텍스트</p>;
 ※ 참조 : [React { }의 사용](https://velog.io/@chaerin00/React-%EC%9D%98-%EC%9D%98%EB%AF%B8)
 
 ---
+[[TOP]](#기본-명령어)
+<br/>
 
 
