@@ -26,7 +26,7 @@
 ### 프로젝트 생성 
 - 프로젝트 생성 : npx create-react-app `프로젝트명`
 ```powershell
-npx create-react-app vocs
+npx create-react-app voca
 ```
 
 - 개벌 서버 실행 : npm start
