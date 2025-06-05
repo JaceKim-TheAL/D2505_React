@@ -33,6 +33,6 @@ PS C:\GitHub\D2505_React\lect\react\voca> npm start
 
 ```
 
-- 개벌 서버 화면 : index.js 를 호출
+- 서버 실행 화면 : index.js 를 호출
 > 크롬에서 [localhost:3000]{http://localhost:3000/} 를 오픈
 ![첫화면](../images/s02_react_default.png)
