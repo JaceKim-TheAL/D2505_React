@@ -15,7 +15,7 @@
 > #### [S07. state, useState			      ][lect-s07]
 > #### [S08. props					      ][lect-s08]
 ---
-- 실습 : react/toeic
+- 실습 : react/word
 > #### [S09. 더미 데이터 구현, map() 반복문	      ][lect-s09]
 > #### [S10. 라우터 구현 react-router-dom	      ][lect-s10]
 > #### [S11. json-server, REST API		      ][lect-s11]
