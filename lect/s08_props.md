@@ -323,7 +323,7 @@ export default function Hello({init_age = 10, ...props}) {
 
 
 - localhost:3000
-![화면](./images/s08_props_05.png)
+![화면](./images/s08_props_04.png)
 
 ---
 [[TOP]](#s08-props)
