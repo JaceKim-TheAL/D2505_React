@@ -4,6 +4,7 @@
 
 ## INDEX
  
+> #### [S00. 기본 명령어                                  ][lect-s00]
 > #### [S01. 소개                                        ][lect-s01]
 ---
 > **[실습]** /react/voca
@@ -26,6 +27,7 @@
 > #### [S16. 마치며				      ][lect-s16]
 > #### [Appendix. 타입스크립트를 적용해보자!     ][lect-appendix] 
 
+[lect-s00]: s00_commands.md
 [lect-s01]: s01_intro.md
 [lect-s02]: s02_create_app.md
 [lect-s03]: s03_component_jsx.md
