@@ -6,6 +6,50 @@
 - [상태값 변경3](#상태값-변경3) : 버튼 클릭시 useState를 활용하여 상태값을 직접 변경 
 - [상태값 변경4](#상태값-변경4) : 최종적으로 function을 onClick 이벤트에 직접 구현하여 변경
 
+Tip. React에서 논리연산자 
+1. 같다 (Equality)
+- == : 느슨한 비교 (값만 비교, 타입 변환 가능)
+- === : 엄격한 비교 (값과 타입 모두 비교)
+```jsx
+const a = "5";
+const b = 5;
+
+console.log(a == b);  // true (타입 변환 후 비교)
+console.log(a === b); // false (타입이 다름)
+```
+2. 같지 않다 (Inequality)
+- != : 느슨한 비교 (값만 비교, 타입 변환 가능)
+- !== : 엄격한 비교 (값과 타입 모두 비교)
+```jsx
+const x = "10";
+const y = 10;
+
+console.log(x != y);  // false (타입 변환 후 비교)
+console.log(x !== y); // true (타입이 다름)
+```
+3. 활용예시
+- React에서 조건부 렌더링을 할 때 논리 연산자를 사용할 수 있다.
+```jsx
+function Example({ value }) {
+  return (
+    <div>
+      {value === 10 ? <p>값이 10입니다.</p> : <p>값이 10이 아닙니다.</p>}
+    </div>
+  );
+}
+```
+- 또는 `&&` 연산자를 활용하여 특정 조건이 참일 때만 렌더링할 수도 있습니다.
+```jsx
+function Example({ value }) {
+  return (
+    <div>
+      {value !== 10 && <p>값이 10이 아닙니다.</p>}
+    </div>
+  );
+}
+```
+※ 참조 : [React 공식 문서](https://ko.react.dev/learn/conditional-rendering)
+
 ---
 
 ### 상태값 변경1
