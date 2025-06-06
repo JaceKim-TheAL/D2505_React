@@ -1,13 +1,13 @@
 [![My Skills](https://skillicons.dev/icons?heiht="10"&i=nodejs,vscode,js,react&theme=light)](readme.md)
 
 ## S09. 프로젝트 착수	
-> 개요
+> React 에서 서비스 개발시 초기화 작업
 
 ### 단어장 개발 
 - [프로젝트 생성](#프로젝트-생성) : 새 프로젝트(word) 생성 
 - [기본 스타일](#기본-스타일) : 전체에 기본적으로 적용할 스타일(index.css)을 Copy & Paste
 - [기본 데이터](#기본-데이터) : 기본적으로 관리할 데이터 파일(db/data.json) 생성
-- [기본 페이지]
+- [웹서버 구동](#웹서버-구동) : React 서버 구동 후 브라우저에서 화면 체크
 
 ---
 
@@ -262,7 +262,10 @@ export default App;
 ```
 
 
-### 구동 페이지
+### 웹서버 구동
+```powershell
+npm start
+```
 
 - localhost:3000
 <pre>
