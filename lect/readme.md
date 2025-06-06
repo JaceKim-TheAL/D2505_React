@@ -17,6 +17,7 @@
 > #### [S08. props					           ][lect-s08]
 ---
 > **[실습]** /react/word
+> #### [신규 프로젝트 생성 및 초기화 작업            ][lect-new]
 > #### [S09. 더미 데이터 구현, map() 반복문	        ][lect-s09]
 > #### [S10. 라우터 구현 react-router-dom	      ][lect-s10]
 > #### [S11. json-server, REST API		         ][lect-s11]
@@ -36,6 +37,7 @@
 [lect-s06]: s06_handling_events.md
 [lect-s07]: s07_state_useState.md
 [lect-s08]: s08_props.md
+[lect-new]: s09_create_project.md
 [lect-s09]: s09_dummy_data.md
 [lect-s10]: s10_router.md
 [lect-s11]: s11_json_server.md
