@@ -1,13 +1,13 @@
 [![My Skills](https://skillicons.dev/icons?heiht="10"&i=nodejs,vscode,js,react&theme=light)](readme.md)
 
-## S09. 더미 데이터 구현, map() 반복문	
+## S09. 프로젝트 착수	
 > 개요
 
 ### 단어장 개발 
-- [프로젝트 생성](#프로젝트-생성) : 새 프로젝트(word) 생성 후 기본 스타일(index.css) 적용 
-- [속성값 전달2](#속성값-전달2) : 읽어온 속성값을 state로 관리
-- [속성값 전달3](#속성값-전달3) : 읽어온 속성값을 state로 관리
-- [속성값 전달4](#속성값-전달4) : 컴포넌트의 속성값 변경하기.
+- [프로젝트 생성](#프로젝트-생성) : 새 프로젝트(word) 생성 
+- [기본 스타일](#기본-스타일) : 전체에 기본적으로 적용할 스타일(index.css)을 Copy & Paste
+- [기본 데이터](#기본-데이터) : 기본적으로 관리할 데이터 파일(db/data.json) 생성
+- [기본 페이지]
 
 ---
 
@@ -19,6 +19,9 @@ npx create-react-app word
 ```
 <br/>
 
+---
+
+### 기본 스타일 
 - 기본스타일 C&P, src/index.css
 ```css
 body {
@@ -155,33 +158,95 @@ button {
 }
 
 ```
+<br/>
+
+---
+[[TOP]](#s09-프로젝트-착수)
+<br/>
+
+### 기본 데이터
 
 - db/data.json : 데이터 파일 생성
 ```json
+{
+  "days": [
+    {
+      "id": 1,
+      "day": 1
+    },
+    {
+      "id": 2,
+      "day": 2
+    },
+    {
+      "id": 3,
+      "day": 3
+    },
+    {
+      "day": 4,
+      "id": 4
+    }
+  ],
+  "words": [
+    {
+      "id": 1,
+      "day": 1,
+      "eng": "book",
+      "kor": "책",
+      "isDone": false
+    },
+    {
+      "id": 3,
+      "day": 2,
+      "eng": "car",
+      "kor": "자동차",
+      "isDone": false
+    },
+    {
+      "id": 5,
+      "day": 3,
+      "eng": "school",
+      "kor": "학교",
+      "isDone": false
+    },
+    {
+      "id": 6,
+      "day": 3,
+      "eng": "pencil",
+      "kor": "연필",
+      "isDone": false
+    }
+}
 
 ```
-
----
-[[TOP]](#s08-props)
 <br/>
 
-- 파일경로/파일명.js
+---
+[[TOP]](#s09-프로젝트-착수)
+<br/>
+
+### 기본 페이지
+
+- index.js 
 ```js
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+reportWebVitals();
 
 ```
 
-- localhost:3000
-> setAge(age + 1); 를 주석처리
-
-![화면](./images/s08_props_01.png)
-
-
----
-[[TOP]](#s09-더미-데이터-구현-map-반복문)
-<br/>
-
-### 속성값 전달2
-- 파일경로/파일명.js
+- App.js
 ```js
 function App() {
   return (
@@ -196,20 +261,17 @@ export default App;
 
 ```
 
-- Header.js : 컴포넌트 생성
-```js
 
-```
-
-
+### 구동 페이지
 
 - localhost:3000
-> setAge(age + 1); 를 주석처리
+<pre>
+Default App Component
 
-![화면](./images/s08_props_01.png)
 
+</pre>
 
 ---
-[[TOP]](#s09-더미-데이터-구현-map-반복문)
+[[TOP]](#s09-프로젝트-착수)
 <br/>
 
