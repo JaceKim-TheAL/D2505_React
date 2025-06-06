@@ -1,6 +1,6 @@
 [![My Skills](https://skillicons.dev/icons?heiht="10"&i=nodejs,vscode,js,react&theme=light)](readme.md)
 
-## S09. 더미 데이터 구현, map() 반복문	
+## S09. 더미 데이터 조회, map() 반복문	
 > 개요
 
 ### 단어장 개발 
@@ -11,205 +11,60 @@
 
 ---
 
-### 프로젝트 생성
+### 더미데이터 읽어오기
 
-- npx 명령어로 프로젝트 생성
-```powershell
-npx create-react-app word
-```
-<br/>
-
-- 기본스타일 C&P, src/index.css
-```css
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 20px;
-}
-
-ol,
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-a {
-  text-decoration: none;
-  color: #333;
-}
-
-.App {
-  width: 800px;
-  margin: 0 auto;
-}
-
-.header {
-  position: relative;
-}
-
-.header .menu {
-  position: absolute;
-  top: 10px;
-  right: 0;
-}
-
-.header .link {
-  border: 1px solid #333;
-  padding: 10px;
-  margin-left: 10px;
-  background-color: #efefef;
-  font-weight: bold;
-  border-radius: 4px;
-}
-
-.list_day {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.list_day li {
-  flex: 20% 0 0;
-  box-sizing: border-box;
-  padding: 10px;
-}
-
-.list_day a {
-  display: block;
-  padding: 20px 0;
-  font-weight: bold;
-  color: #fff;
-  text-align: center;
-  border-radius: 10px;
-  background-color: dodgerblue;
-}
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-table td {
-  width: 25%;
-  height: 70px;
-  border: 1px solid #ccc;
-  text-align: center;
-  font-size: 26px;
-}
-
-table td:first-child {
-  width: 10%;
-}
-
-.off td {
-  background: #eee;
-  color: #ccc;
-}
-
-.btn_del {
-  margin-left: 10px;
-  color: #fff;
-  background-color: firebrick;
-}
-
-button {
-  padding: 10px;
-  font-weight: bold;
-  font-size: 18px;
-  cursor: pointer;
-  border: 0 none;
-  border-radius: 6px;
-  padding: 10px 20px;
-  color: #fff;
-  background-color: dodgerblue;
-}
-
-.input_area {
-  margin-bottom: 10px;
-}
-
-.input_area label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-.input_area input {
-  width: 400px;
-  height: 40px;
-  font-size: 20px;
-  padding: 0 10px;
-}
-
-.input_area select {
-  width: 400px;
-  height: 40px;
-  font-size: 20px;
-}
-
-```
-
-- db/data.json : 데이터 파일 생성
-```json
-
-```
-
----
-[[TOP]](#s08-props)
-<br/>
-
-- 파일경로/파일명.js
+### 컴포넌트 DayList : db/data.json 으로부터 데이터 읽어오기
+- component/DayList.js
 ```js
+import dummy from "../db/data.json";
 
+export default function DayList() {
+    console.log(dummy);
+    return <>day list </>
+}
 ```
 
-- localhost:3000
-> setAge(age + 1); 를 주석처리
-
-![화면](./images/s08_props_01.png)
-
-
----
-[[TOP]](#s09-더미-데이터-구현-map-반복문)
-<br/>
-
-### 속성값 전달2
-- 파일경로/파일명.js
+- component/Header.js
 ```js
+import DayList from "./DayList";
+
+export default function Header() {
+  return (
+    <div className="header">
+      <h1>
+        <a href="/">토익 영단어(공급)</a>
+      </h1>
+      <DayList />
+    </div>
+  );
+}
+```
+
+
+- App.js : 첫화면에서 Header 태그 읽어온다 (Data는 Header의 DayList 태그에서 읽어옴옴)
+```js
+import Header from "./component/Header";
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      </header>
+      <Header/>
     </div>
   );
 }
 
 export default App;
-
-```
-
-- Header.js : 컴포넌트 생성
-```js
-
 ```
 
 
 
 - localhost:3000
-> setAge(age + 1); 를 주석처리
+> Console에서 읽어온온 데이터값 확인
 
-![화면](./images/s08_props_01.png)
+![화면](./images/s09_dummy_data_01.png)
 
 
 ---
-[[TOP]](#s09-더미-데이터-구현-map-반복문)
+[[TOP]](#s09-더미-데이터-조회-map-반복문)
 <br/>
 
