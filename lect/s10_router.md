@@ -14,7 +14,7 @@
 ```powershell
 npm install react-router-dom
 ``` 
-> 만약 패키지를 설치하다가 **취약점(vulnerabilities)**이 발견되었다면, 아래와 같이 해결
+> 만약 패키지를 설치하다가 **취약점(vulnerabilities)** 이 발견되었다면, 아래와 같이 해결
 > - `npm audit fix` : 자동으로 해결 가능한 취약점을 수정
 > - `npm aucit ` : 상세 정보 확인 (수정되지 않은 취약점이 있는 경우)
 
