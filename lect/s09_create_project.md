@@ -242,12 +242,22 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>
+          <a href="/">영어단어노트</a>
+        </h1>
+        {/* <DayList /> */}
+        <p>영어단어노트는 영어 단어를 관리하는 웹 애플리케이션입니다.</p>
+        <p>이 애플리케이션은 사용자가 단어를 추가, 수정, 삭제할 수 있는 기능을 제공합니다.</p>
+        <p>또한, 단어의 뜻과 예문을 추가하여 학습에 도움을 줍니다.</p>
+        <p>사용자는 단어를 일별로 관리할 수 있으며, 각 단어에 대한 상세 정보를 확인할 수 있습니다.</p>
+        <p>이 애플리케이션은 React를 사용하여 개발되었습니다.</p>
       </header>
     </div>
   );
 }
 
 export default App;
+
 
 ```
 
@@ -258,11 +268,7 @@ npm start
 ```
 
 - localhost:3000
-<pre>
-Default App Component
-
-
-</pre>
+![화면](./images/s09_create_project.png)
 
 ---
 [[TOP]](#s09-프로젝트-착수)
