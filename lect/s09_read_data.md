@@ -1,6 +1,6 @@
 [![My Skills](https://skillicons.dev/icons?heiht="10"&i=nodejs,vscode,js,react&theme=light)](readme.md)
 
-## S09. 더미 데이터 조회, map() 반복문	
+## S09. 데이터 조회, map() 반복문	
 > 개요
 
 ### 단어장 개발 
@@ -13,12 +13,11 @@
 
 - component/DayList.js
 
-
 ```js
-import dummy from "../db/data.json";
+import dbdata from "../db/data.json";
 
 export default function DayList() {
-    console.log(dummy);
+    console.log(dbdata);
     return <>day list </>
 }
 ```
@@ -29,10 +28,12 @@ import DayList from "./DayList";
 
 export default function Header() {
   return (
-    <div className="header">
-      <h1>
-        <a href="/">토익 영단어(공급)</a>
-      </h1>
+    <div className="App">
+      <header className="App-header">
+        <h1>
+          <a href="/">영어단어노트</a>
+        </h1>
+      </header>
       <DayList />
     </div>
   );
@@ -47,15 +48,14 @@ import Header from "./component/Header";
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <Header /> 
     </div>
   );
 }
 
 export default App;
 ```
-
-
+<br/>
 
 - localhost:3000
 > Console에서 읽어온 데이터값 확인
