@@ -5,7 +5,8 @@
 
 ### 단어장 개발 
 - [프로젝트 생성](s09_create_project.md) : 새 프로젝트(word) 생성 후 기본 스타일(index.css) 적용 
-- [데이터 조회1](#데이터-조회1) : 데이터파일 조회
+- [데이터 조회1](#데이터-조회1) : 데이터파일(db/data.json) 읽어와서 console에서 확인
+- [데이터 조회2](#데이터-조회2) : 데이터파일에서 Day별 단어리스트를 화면에 출력
 ---
 
 ### 데이터 조회1
@@ -60,14 +61,14 @@ export default App;
 - localhost:3000
 > Console에서 읽어온 데이터값 확인
 
-![화면](./images/s09_read_data_01.png)
+![화면](./images/s09_read_dbdata_01.png)
 
 ---
 [[TOP]](#s09-더미-데이터-조회-map-반복문)
 <br/>
 
 ### 데이터 조회2
-> Day별 단어리스트 읽어오기
+> 데이터파일에서 Day별 단어리스트를 화면에 출력
 
 - App.js
 ```js
@@ -170,7 +171,7 @@ export default function Day(props) {
 ```
 
 - localhost:3000
-![화면](./images/s09_read_data_02.png)
+![화면](./images/s09_read_dbdata_02.png)
 
 ---
 [[TOP]](#s09-더미-데이터-조회-map-반복문)
