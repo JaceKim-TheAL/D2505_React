@@ -72,34 +72,36 @@ export default App;
 - App.js
 ```js
 import Header from "./component/Header";
-import DayList from "./component/DayList";
+import DayList from "./component/DayList"; 
 import Day from "./component/Day";
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <DayList/>
-      <Day/>
+      <Header /> 
+      <DayList />
+      <Day />
     </div>
   );
 }
 
 export default App;
-
 ```
 
 - component/Header.js
 ```js
-// import DayList from "./DayList";
-
 export default function Header() {
   return (
-    <div className="header">
-      <h1>
-        <a href="/">영단어관리(Word Manager)</a>
-      </h1>
-      {/* <DayList /> */}
+    <div className="App">
+      <header className="App-header">
+        <h1>
+          <a href="/">영어단어노트</a>
+        </h1>
+        <div align="right">
+          <button>단어 추가</button> &nbsp;
+          <button>DAY 추가</button> &nbsp;
+        </div>
+      </header>
     </div>
   );
 }
@@ -107,31 +109,35 @@ export default function Header() {
 
 - component/DayList.js
 ```js
-import dummy from "../db/data.json";
+import dbdata from "../db/data.json";
 
 export default function DayList() {
     console.log("DayList");
-    console.log(dummy);
-    return <ul className="list_day">
-        { dummy.days.map(day => (
-            <li key={day.id}><a href={day.day}>Day {day.day}</a></li>
+    console.log(dbdata);
+    // console.log(dbdata.days);
+    return (
+      <ul className="list_day">
+        { dbdata.days.map(day => (
+          <li key={day.id}>
+            <a href={`/day/${day.day}`}>
+              Day {day.day}
+            </a>
+          </li>
         ))}
-    </ul>
+      </ul>
+    );
 }
 
 ```
 
 - component/Day.js
 ```js
-import dummy from "../db/data.json";
-import { useState } from "react";
+import dbdata from "../db/data.json";
 
 export default function Day(props) {
-    // dummy.word 
-    // const day = 1; // 예시로 1일차 단어를 표시
-    // const day = props.day || 1; // props로 전달된 day가 없으면 기본값 1을 사용
-    const [day, setDay] = useState(props.day || 1); // props로 전달된 day가 없으면 기본값 1을 사용
-    const wordList = dummy.words.filter((word) => word.day === day);
+    // dbdata.word 
+    const day = 3; // 예시로 3일차 단어를 표시
+    const wordList = dbdata.words.filter((word) => word.day === day);
     if (wordList.length === 0) {
       return <p>해당 날짜에 단어가 없습니다.</p>;
     }
