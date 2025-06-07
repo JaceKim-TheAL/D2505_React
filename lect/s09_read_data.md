@@ -4,17 +4,16 @@
 > 개요
 
 ### 단어장 개발 
-- [프로젝트 생성](#프로젝트-생성) : 새 프로젝트(word) 생성 후 기본 스타일(index.css) 적용 
-- [속성값 전달2](#속성값-전달2) : 읽어온 속성값을 state로 관리
-- [속성값 전달3](#속성값-전달3) : 읽어온 속성값을 state로 관리
-- [속성값 전달4](#속성값-전달4) : 컴포넌트의 속성값 변경하기.
-
+- [프로젝트 생성](s09_create_project.md) : 새 프로젝트(word) 생성 후 기본 스타일(index.css) 적용 
+- [데이터 조회1](#데이터-조회1) : 데이터파일 조회
 ---
 
-### 더미데이터 읽어오기
+### 데이터 조회1
 
 ### 컴포넌트 DayList : db/data.json 으로부터 데이터 읽어오기
 - component/DayList.js
+
+
 ```js
 import dummy from "../db/data.json";
 
@@ -59,9 +58,9 @@ export default App;
 
 
 - localhost:3000
-> Console에서 읽어온온 데이터값 확인
+> Console에서 읽어온 데이터값 확인
 
-![화면](./images/s09_dummy_data_01.png)
+![화면](./images/s09_read_data_01.png)
 
 
 ---
