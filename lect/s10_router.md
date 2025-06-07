@@ -35,14 +35,14 @@ PS C:\GitHub\D2505_React\lect\react\word>
 
 - **취약점(vulnerabilities)** 발생한 경우
 
-##### [방법1] 다운그레이드 설치
+#### [방법1] 다운그레이드 설치
 > `react-router-dom`을 v5로 다운그레이드
 
 ```
 npm install react-router-dom@5
 ```
 
-##### [방법2] 취약점 강제 수정
+#### [방법2] 취약점 강제 수정
 > - 만약 패키지를 설치하다가 **취약점(vulnerabilities)** 이 발견되면 아래와 같이 하라고 권고메시지지
 > - `npm audit fix` : 자동으로 해결 가능한 취약점을 수정
 > - `npm aucit` : 상세 정보 확인 (수정되지 않은 취약점이 있는 경우)
