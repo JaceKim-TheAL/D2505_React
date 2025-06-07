@@ -69,6 +69,26 @@ export default App;
 ### 데이터 조회2
 > Day별 단어리스트 읽어오기
 
+- App.js
+```js
+import Header from "./component/Header";
+import DayList from "./component/DayList";
+import Day from "./component/Day";
+
+function App() {
+  return (
+    <div className="App">
+      <Header/>
+      <DayList/>
+      <Day/>
+    </div>
+  );
+}
+
+export default App;
+
+```
+
 - component/Header.js
 ```js
 // import DayList from "./DayList";
