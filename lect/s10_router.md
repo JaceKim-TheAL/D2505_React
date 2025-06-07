@@ -1,6 +1,6 @@
 [![My Skills](https://skillicons.dev/icons?heiht="10"&i=nodejs,vscode,js,react&theme=light)](readme.md)
 
-## S99. 문서포맷	
+## S10. 라우터 구현 react-router-dom
 > 개요
 
 ### 페이지내 이동
@@ -9,8 +9,14 @@
 
 ---
 
-### 실습1
-- 파일경로/파일명.js
+### react-router-dom 패키지 설치
+
+```powershell
+npm install react-router-dom
+```
+
+
+- App.js
 ```js
 
 ```
