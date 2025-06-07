@@ -10,7 +10,8 @@
 
 ### 데이터 조회1
 
-### 컴포넌트 DayList : db/data.json 으로부터 데이터 읽어오기
+> 컴포넌트 DayList : db/data.json 으로부터 데이터 읽어오기
+
 - component/DayList.js
 
 
