@@ -171,22 +171,10 @@ button {
 ```json
 {
   "days": [
-    {
-      "id": 1,
-      "day": 1
-    },
-    {
-      "id": 2,
-      "day": 2
-    },
-    {
-      "id": 3,
-      "day": 3
-    },
-    {
-      "day": 4,
-      "id": 4
-    }
+    { "id": 1, "day": 1 },
+    { "id": 2, "day": 2 },
+    { "id": 3, "day": 3 }, 
+    { "id": 4, "day": 4 }
   ],
   "words": [
     {
@@ -217,6 +205,7 @@ button {
       "kor": "연필",
       "isDone": false
     }
+  ]
 }
 
 ```
