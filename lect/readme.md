@@ -18,7 +18,7 @@
 ---
 > **[실습]** /react/word
 > #### [신규 프로젝트 생성 및 초기화 작업            ][lect-new]
-> #### [S09. 더미 데이터 구현, map() 반복문	        ][lect-s09]
+> #### [S09. 더미 데이터 조회, map() 반복문	        ][lect-s09]
 > #### [S10. 라우터 구현 react-router-dom	      ][lect-s10]
 > #### [S11. json-server, REST API		         ][lect-s11]
 > #### [S12. useEffect, fetch()로 API 호출	      ][lect-s12]
