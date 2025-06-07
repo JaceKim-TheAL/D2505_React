@@ -16,7 +16,7 @@
 
 - npx 명령어로 프로젝트 생성
 ```powershell
-npx create-react-app word
+npx create-react-app voca
 ```
 <br/>
 
