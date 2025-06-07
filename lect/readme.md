@@ -38,7 +38,7 @@
 [lect-s07]: s07_state_useState.md
 [lect-s08]: s08_props.md
 [lect-new]: s09_create_project.md
-[lect-s09]: s09_dummy_data.md
+[lect-s09]: s09_read_data.md
 [lect-s10]: s10_router.md
 [lect-s11]: s11_json_server.md
 [lect-s12]: s12_use_effect.md
