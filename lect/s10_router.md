@@ -14,10 +14,8 @@
 ```powershell
 npm install react-router-dom
 ``` 
-> 만약 패키지를 설치하다가 **취약점(vulnerabilities)** 이 발견되었다면, 아래와 같이 해결
-> - `npm audit fix` : 자동으로 해결 가능한 취약점을 수정
-> - `npm aucit` : 상세 정보 확인 (수정되지 않은 취약점이 있는 경우)
 
+- Teminal에서 Package 설치
 ```powershell
 PS C:\GitHub\D2505_React\lect\react\word> npm install react-router-dom
 
@@ -32,6 +30,27 @@ To address all issues (including breaking changes), run:
   npm audit fix --force
 
 Run `npm audit` for details.
+PS C:\GitHub\D2505_React\lect\react\word> 
+```
+
+- **취약점(vulnerabilities)** 발생한 경우
+
+##### [[방법1]] 다운그레이드 설치
+> `react-router-dom`을 v5로 다운그레이드
+
+```
+npm install react-router-dom@5
+```
+
+##### [[방법2]] 취약점 강제 수정
+> - 만약 패키지를 설치하다가 **취약점(vulnerabilities)** 이 발견되면 아래와 같이 하라고 권고메시지지
+> - `npm audit fix` : 자동으로 해결 가능한 취약점을 수정
+> - `npm aucit` : 상세 정보 확인 (수정되지 않은 취약점이 있는 경우)
+
+> - But 그냥 무시!!
+> - 강제로 fix 한 경우, 서버구동에 문제 발생!!!
+
+```powershell
 PS C:\GitHub\D2505_React\lect\react\word> npm audit fix --force
 npm warn using --force Recommended protections disabled.
 npm warn audit Updating react-scripts to 0.0.0, which is a SemVer major change.
@@ -49,8 +68,61 @@ PS C:\GitHub\D2505_React\lect\react\word>
 ```
 
 
+---
+
+- 서버 구동
+```powershell
+
+```
+PS C:\GitHub\practice\react\voca> npm start
+
+> voca@0.1.0 start
+> react-scripts start
+
+(node:3276) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:3276) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+Compiled with warnings.
+
+[eslint]
+src\App.js
+  Line 4:27:  'Router' is defined but never used  no-unused-vars
+  Line 4:35:  'Route' is defined but never used   no-unused-vars
+  Line 4:42:  'Switch' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint]
+src\App.js
+  Line 4:27:  'Router' is defined but never used  no-unused-vars
+  Line 4:35:  'Route' is defined but never used   no-unused-vars
+  Line 4:42:  'Switch' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+
+
+---
+
 - App.js
 ```js
+import Header from "./component/Header";
+import DayList from "./component/DayList"; 
+import Day from "./component/Day";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+function App() {
+  return (
+    <div className="App">
+      <Header /> 
+      <DayList />
+      <Day />
+    </div>
+  );
+}
+
+export default App;
 
 ```
 
